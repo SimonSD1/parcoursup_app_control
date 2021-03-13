@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Panneau de control</title>
+    <meta name="description" content="Control les ordi"><link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900">
+    <link rel="stylesheet" href="{{url_for('static',filename="assets/css/styles.min.css")}}">
+</head>
+
+<body style="background-color: rgb(255,255,255);">
+    <div class="container-fluid">
+        <nav class="navbar navbar-light navbar-expand-md border-secondary border rounded shadow-sm" style="background-color: rgba(255,255,255,0);">
+            <div class="container-fluid"><a class="navbar-brand d-xl-flex" href="#" style="font-family: Roboto, sans-serif;">PANNEAU DE CONTROL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active d-xl-flex" href="/CDI">CHAMBRE 1</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/LC103" style="color: rgb(0,0,0);">CHAMBRE 2</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/LC104" style="color: rgb(0,0,0);">SALON</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/CODE" style="color: rgb(0,0,0);">CODE</a></li>
+                        <li class="nav-item" role="presentation"></li>
+                    </ul>
+            </div>
+    </div>
+    </nav>
+    </div>
+    <h1 class="text-center d-flex justify-content-center align-items-center align-content-center" style="height: 71px;">Turoriels</h1>
+    <div class="text-justify">
+        <div class="container" style="font-size: 20px;">
+            <div class="row d-flex justify-content-center align-items-center" style="height: 556px;">
+                <div class="col-md-6 text-left" style="height: 235px;">
+                    <div class="card" style="background-color: rgba(255,255,255,0.29);filter: blur(0px);">
+                        <div class="card-body border rounded border-secondary shadow-lg" style="height: 235px;">
+                            <h4 class="card-title">Tuto pour les ordis :</h4>
+                            <ol>
+                                <li>Selectioner les actions voulu puis apuyer sur envoyer</li>
+                                <li>Ne rien selectioner puis apuyer sur envoyer pour pouvoir refaire les actions</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="height: 235px;">
+                    <div class="card" style="background-color: rgba(255,255,255,0.31);">
+                        <div class="card-body border rounded border-secondary shadow-lg" style="filter: blur(0px);background-color: rgba(255,255,255,0);height: 235px;">
+                            <h4 class="card-title">Tuto pour changer le code :</h4>
+                            <ol>
+                                <li>Verifier que l'etat est sur off&nbsp;</li>
+                                <li>Ecrire le code dans la zone de texte</li>
+                                <li>Cocher activation et apuyer sur envoyer<br></li>
+                                <li>Ne rien selectioner puis apuyer sur envoyer&nbsp;</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+      
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"
+        ></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+
+</html>
