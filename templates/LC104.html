@@ -35,11 +35,11 @@
                 <div class="col-md-6 text-left" style="height: 205px;">
                     <div class="card" style="background-color: rgba(255,255,255,0.29);filter: blur(0px);">
                         <div class="card-body border rounded border-secondary shadow-lg">
-                            <h4 class="card-title">Parametres</h4>
+                            <h4 class="card-title">Paramètres :</h4>
                             <form method='POST'>
                                 <ul class="list-unstyled">
                                     <li><input type="checkbox" name="activation104" > Eteindre</li>
-                                    <li><input type="checkbox" name="disable104" > Desactive les périphériques</li>
+                                    <li><input type="checkbox" name="disable104" > Désactiver les périphériques</li>
                                     
                                 </ul>
                                 <div class="text-center"><button class="btn btn-primary" type="submit">Envoyer</button></div>
@@ -50,11 +50,11 @@
                 <div class="col-md-6">
                     <div class="card" style="background-color: rgba(255,255,255,0.31);">
                         <div class="card-body border rounded border-secondary shadow-lg" style="filter: blur(0px);background-color: rgba(255,255,255,0);">
-                            <h4 class="card-title">Etats:</h4>
+                            <h4 class="card-title">Etats :</h4>
                             {%for note in notes%}
                                 <div id="etat">
                                     <h4>
-                                    <div id='etat2'<p>etat : {{note.data}}</p></div>
+                                    <div id='etat2'<p>état : {{note.data}}</p></div>
                                     </h4>
                                 </div>
                             {%endfor%}
@@ -64,7 +64,7 @@
                             {%for clavier in claviersouris%}
                                 <div id="peripheriques">
                                     <h4>
-                                    <div id='disable'<p>peripheriques : {{clavier.data}}</p></div>
+                                    <div id='disable'<p>périphériques : {{clavier.data}}</p></div>
                                     </h4>
                                 </div>
                             {%endfor%}
