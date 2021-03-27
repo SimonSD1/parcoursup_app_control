@@ -87,8 +87,8 @@ def code():
 
 
 
-@app.route("/CDI", methods=["POST", "GET"])
-def cdi():
+@app.route("/Chambre_1", methods=["POST", "GET"])
+def Chambre_1():
 
     
     
@@ -122,13 +122,13 @@ def cdi():
             new_etat_clavier=modelKeyboard(data=etat_activation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('cdi'))
+            return redirect(url_for('Chambre_1'))
         else:
             etat_desactivation='on'
             new_etat_clavier=modelKeyboard(data=etat_desactivation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('cdi'))
+            return redirect(url_for('Chambre_1'))
 
 
 
@@ -138,12 +138,12 @@ def cdi():
     
     
     notes = modelActive.query.order_by(modelActive.id)
-    return render_template("CDI.html", notes=notes, claviersouris=claviersouris)
+    return render_template("Chambre_1.html", notes=notes, claviersouris=claviersouris)
 
 
 
-@app.route("/LC103", methods=["POST", "GET"])
-def LC103():
+@app.route("/Chambre_2", methods=["POST", "GET"])
+def Chambre_2():
 
     
     
@@ -177,13 +177,13 @@ def LC103():
             new_etat_clavier=modelKeyboard103(data=etat_activation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('LC103'))
+            return redirect(url_for('Chambre_2'))
         else:
             etat_desactivation='on'
             new_etat_clavier=modelKeyboard103(data=etat_desactivation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('LC103'))
+            return redirect(url_for('Chambre_2'))
 
 
 
@@ -192,10 +192,10 @@ def LC103():
     claviersouris=modelKeyboard103.query.order_by(modelKeyboard103.id)
     
     notes = modelActive103.query.order_by(modelActive103.id)
-    return render_template("LC103.html", notes=notes, claviersouris=claviersouris)
+    return render_template("Chambre_2.html", notes=notes, claviersouris=claviersouris)
 
-@app.route("/LC104", methods=["POST", "GET"])
-def LC104():
+@app.route("/SALON", methods=["POST", "GET"])
+def SALON():
 
     
     
@@ -229,13 +229,13 @@ def LC104():
             new_etat_clavier=modelKeyboard104(data=etat_activation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('LC104'))
+            return redirect(url_for('SALON'))
         else:
             etat_desactivation='on'
             new_etat_clavier=modelKeyboard104(data=etat_desactivation)
             db.session.add(new_etat_clavier)
             db.session.commit()
-            return redirect(url_for('LC104'))
+            return redirect(url_for('SALON'))
 
 
 
@@ -244,7 +244,7 @@ def LC104():
     claviersouris=modelKeyboard104.query.order_by(modelKeyboard104.id)
     
     notes = modelActive104.query.order_by(modelActive104.id)
-    return render_template("LC104.html", notes=notes, claviersouris=claviersouris)
+    return render_template("SALON.html", notes=notes, claviersouris=claviersouris)
 
 
 
